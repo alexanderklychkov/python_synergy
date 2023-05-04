@@ -18,17 +18,17 @@ for vowel in vowels_dict:
     if vowels_dict[vowel] == 0:
         has_all_letters = False
 
-if has_all_letters:
-    for vowel in vowels_dict:
-        vowels_count += vowels_dict[vowel]
-        print(f'Количество гласной {vowel}: {vowels_dict[vowel]}')
+for vowel in vowels_dict:
+    vowels_count += vowels_dict[vowel]
+    print(f'Количество гласной {vowel}: {vowels_dict[vowel]}')
 
-    for consonant in consonants_dict:
-        consonants_count += consonants_dict[consonant]
-        print(f'Количество согласной {consonant}: {consonants_dict[consonant]}')
-else:
-    print(False)
+for consonant in consonants_dict:
+    consonants_count += consonants_dict[consonant]
+    print(f'Количество согласной {consonant}: {consonants_dict[consonant]}')
 
 
 print(f'\nОбщее количество гласных - {vowels_count}')
 print(f'Общее количество согласных - {consonants_count}')
+
+if not has_all_letters:
+    print(False)
