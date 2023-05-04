@@ -26,8 +26,9 @@ if has_all_letters:
     for consonant in consonants_dict:
         consonants_count += consonants_dict[consonant]
         print(f'Количество согласной {consonant}: {consonants_dict[consonant]}')
-
-    print(f'\nОбщее количество гласных - {vowels_count}')
-    print(f'Общее количество согласных - {consonants_count}')
 else:
     print(False)
+
+
+print(f'\nОбщее количество гласных - {vowels_count}')
+print(f'Общее количество согласных - {consonants_count}')
