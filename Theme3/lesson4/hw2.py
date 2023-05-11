@@ -10,6 +10,11 @@ for i in range(list_one):
     list_one_set.add(int(input('Введите число: ')))
 
 list_two = int(input('Введите кол-во чисел для 2 списка: '))
+
+if list_two > 100000:
+    print('Превышено максимальное значение')
+    exit()
+
 list_two_set = set()
 
 for i in range(list_two):
