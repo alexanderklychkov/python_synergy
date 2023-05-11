@@ -20,6 +20,6 @@ else:
     print('Неверный возраст')
     exit()
 
-print(f'Это {list_pet[0][0]} по кличке {name}. '
+print(f'Это {list_pet[0][1]} по кличке {name}. '
       f'{list_pet[1][0]}: {list_pet[1][1]} {age_title}. '
       f'{list_pet[2][0]}: {list_pet[2][1]}')
