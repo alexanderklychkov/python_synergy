@@ -1,13 +1,18 @@
-print('Набор чисел для 1 списка')
-list_one = set()
+list_one = int(input('Введите кол-во чисел для 1 списка: '))
 
-for i in range(5):
-    list_one.add(int(input('Введите число: ')))
+if list_one > 100000:
+    print('Превышено максимальное значение')
+    exit()
 
-print('Набор чисел для 2 списка')
-list_two = set()
+list_one_set = set()
 
-for i in range(5):
-    list_two.add(int(input('Введите число: ')))
+for i in range(list_one):
+    list_one_set.add(int(input('Введите число: ')))
 
-print(f'Кол-во одинаковых чисел в 1 и 2 списке - {len(list_one.intersection(list_two))}')
+list_two = int(input('Введите кол-во чисел для 2 списка: '))
+list_two_set = set()
+
+for i in range(list_two):
+    list_two_set.add(int(input('Введите число: ')))
+
+print(f'Кол-во одинаковых чисел в 1 и 2 списке - {len(list_one_set.intersection(list_two_set))}')
