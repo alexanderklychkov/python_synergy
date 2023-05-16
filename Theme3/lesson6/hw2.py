@@ -12,7 +12,6 @@ def get_suffix(age):
         age_title = 'года'
     else:
         print('Неверный возраст')
-        get_suffix(age)
 
     return age_title
 
