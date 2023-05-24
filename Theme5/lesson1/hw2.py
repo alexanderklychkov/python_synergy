@@ -30,6 +30,11 @@ class Turtle(object):
     def count_moves(self, x2, y2):
         diff_x = abs(x2 - self.__x)
         diff_y = abs(y2 - self.__y)
+
+        if diff_x % self.__s != 0 or diff_y % self.__s != 0:
+            print('Невозможно добраться до данной позиции')
+            return
+
         return diff_x // self.__s + diff_y // self.__s
 
 
